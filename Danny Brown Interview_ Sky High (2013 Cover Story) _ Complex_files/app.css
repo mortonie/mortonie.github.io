@@ -1,0 +1,1643 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * Complex Cover Story Footer
+ * --------------------------
+ * 
+ * @author eduardo.guanilo@complex.com
+ */
+footer {
+  position: relative;
+  background-color: #ededed;
+  color: #333333;
+  line-height: 18px;
+  z-index: 9999; }
+  footer #credits {
+    position: relative;
+    background: #232323;
+    padding: 75px 0; }
+    footer #credits .inner-col3 {
+      margin-top: 10px; }
+    footer #credits #creditsInner {
+      max-width: 1200px;
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden; }
+    footer #credits #footer-logo {
+      width: 298px;
+      max-width: 100%;
+      height: auto; }
+    footer #credits .col1 {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%; }
+    footer #credits .col2 {
+      display: inline-block;
+      vertical-align: top;
+      width: 66%; }
+    footer #credits .inner-col1, footer #credits .inner-col2 {
+      width: 70%;
+      display: inline-block;
+      vertical-align: top; }
+    footer #credits .credit-list {
+      list-style: none;
+      padding: 0; }
+      footer #credits .credit-list li {
+        padding: 5px 0; }
+    footer #credits #copyright {
+      font-size: .85em;
+      color: #6a6a6a; }
+    footer #credits h5 {
+      font-size: 1.1em;
+      color: #606060;
+      text-transform: uppercase;
+      vertical-align: top;
+      padding: 0;
+      margin: 0;
+      text-align: left; }
+    footer #credits .cred-role {
+      font-size: .85em;
+      color: #e0e0e0;
+      text-transform: uppercase; }
+    footer #credits p {
+      font-size: .85em;
+      color: #fff; }
+    footer #credits .cred-name {
+      font-size: .85em;
+      color: #fff;
+      font-weight: bold; }
+    @media screen and (max-width: 728px) {
+      footer #credits .col1, footer #credits .col2, footer #credits .inner-col1, footer #credits .inner-col2, footer #credits .inner-col3 {
+        display: block;
+        width: 100%; } }
+  footer #week-of-content {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 99999;
+    background: black;
+    /* Fall-back for browsers that don't support rgba */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    overflow: hidden; }
+    footer #week-of-content h2 {
+      padding-top: 40px;
+      padding-left: 100px;
+      padding-right: 100px;
+      font-size: 2.0em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-weight: normal;
+      text-align: center; }
+    footer #week-of-content a {
+      color: inherit;
+      text-decoration: none; }
+    footer #week-of-content a.inactive {
+      text-decoration: line-through;
+      color: #333;
+      cursor: default; }
+    footer #week-of-content .article-schedule {
+      padding-left: 100px;
+      padding-right: 100px;
+      list-style: none;
+      position: relative;
+      padding-bottom: 20px; }
+      footer #week-of-content .article-schedule li {
+        border-bottom: 2px solid #676767;
+        padding: 20px 0; }
+      footer #week-of-content .article-schedule li:first-child {
+        border-top: 2px solid #676767; }
+      footer #week-of-content .article-schedule li:hover {
+        background: black;
+        /* Fall-back for browsers that don't support rgba */
+        background: rgba(0, 0, 0, 0.7); }
+        footer #week-of-content .article-schedule li:hover .schedule-date {
+          text-indent: 20px; }
+      footer #week-of-content .article-schedule .schedule-date {
+        display: inline-block;
+        width: 20%;
+        font-weight: bold;
+        font-size: .95em;
+        transition: text-indent .25s ease-in-out;
+        -moz-transition: text-indent  .25s ease-in-out;
+        -webkit-transition: text-indent  .25s ease-in-out; }
+      footer #week-of-content .article-schedule .scheduled-article {
+        display: inline-block;
+        width: 80%;
+        font-size: 1.3em; }
+      footer #week-of-content .article-schedule .upcoming .scheduled-article {
+        text-decoration: line-through;
+        color: #aaa; }
+  footer .scroll-up {
+    display: block;
+    padding-top: 30px;
+    margin: 0px auto;
+    text-align: center;
+    color: #333333;
+    cursor: pointer;
+    line-height: 15px;
+    margin-bottom: 0px;
+    color: #333; }
+  footer #related-articles {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: solid 2px #bababa;
+    overflow: hidden;
+    height: 1%;
+    color: #333;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto; }
+    footer #related-articles div {
+      margin-left: 30px;
+      float: left;
+      width: 300px;
+      position: relative; }
+      footer #related-articles div:first-child {
+        margin-left: 0px;
+        background: none;
+        height: 35px;
+        width: 200px; }
+      footer #related-articles div p {
+        font-size: 1.0em;
+        margin: 0px; }
+        footer #related-articles div p a {
+          color: #333333;
+          text-decoration: none;
+          outline: 0; }
+          footer #related-articles div p a img {
+            width: 300px;
+            height: 190px;
+            margin-bottom: 12px; }
+      footer #related-articles div.headline p {
+        top: 0;
+        text-transform: uppercase;
+        font-size: 1.5em; }
+  footer #comments {
+    padding-top: 20px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto; }
+
+@media screen and (max-width: 1425px) {
+  footer #related-articles div {
+    float: left;
+    margin: 0 0 20px;
+    width: 33%; }
+    footer #related-articles div:first-child {
+      float: none; } }
+@media screen and (max-width: 1150px) {
+  footer #related-articles div {
+    float: none;
+    margin: 0 0 20px;
+    width: 99%;
+    text-align: center; } }
+#copyright {
+  padding: 30px 0;
+  font-size: 1.3em; }
+
+html {
+  width: 100%; }
+
+body {
+  width: 100%;
+  position: relative;
+  font-family: "Crimson Text", serif;
+  font-size: 100%;
+  color: #FFF; }
+
+.browsehappy a {
+  color: #FFA500; }
+
+.plax {
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.dummy {
+  color: red !important; }
+
+p:first-child {
+  margin-top: 0; }
+
+span.big {
+  font-weight: bold;
+  font-size: 27px !important;
+  font-family: "Crimson Text", serif !important;
+  text-transform: none !important; }
+
+#stylePlease {
+  font-weight: bold;
+  font-size: 27px !important;
+  font-family: "Crimson Text", serif !important;
+  text-transform: none !important; }
+
+#stylePlease2 {
+  font-weight: bold;
+  font-size: 27px !important;
+  font-family: "Crimson Text", serif !important;
+  text-transform: none !important; }
+
+#scenes {
+  position: relative;
+  overflow: hidden;
+  background-color: #b2c7be;
+  width: 100%; }
+
+.buy-now {
+  color: #fff; }
+
+#cover {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  z-index: 999; }
+  #cover #cursor {
+    background: url(../../img/misc/down-arrow-white.png) no-repeat center bottom;
+    bottom: 20px;
+    color: #555;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 110px;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    z-index: 1000;
+    left: 50%;
+    margin-left: -50px; }
+  #cover #title_line {
+    position: absolute;
+    z-index: 20;
+    width: 40%;
+    left: 30%;
+    top: 68px;
+    height: 250px; }
+  #cover #coverlogo, #cover #coverline {
+    display: block; }
+  #cover #coverlogo {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 620px;
+    height: 170px;
+    margin-left: -310px;
+    left: 50%; }
+  #cover #coverline {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -262.5px;
+    z-index: 90;
+    width: 525px;
+    height: 125px; }
+  #cover video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    background: #fff; }
+
+#scene_intro {
+  position: relative;
+  background-color: #b2c7be;
+  width: 100%;
+  padding-top: 849px; }
+  #scene_intro .clouds_bg, #scene_intro .clouds_small, #scene_intro .clouds_top, #scene_intro .clouds_bottom {
+    width: 100%;
+    height: auto;
+    z-index: 999; }
+  #scene_intro .clouds_top, #scene_intro .clouds_bottom {
+    z-index: 1; }
+  #scene_intro .dannybrown {
+    width: 24.4166667%;
+    height: auto; }
+  #scene_intro .headline {
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: .04em;
+    font-weight: 300;
+    font-family: "Crimson Text", serif;
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    z-index: 999;
+    line-height: 1.5em; }
+  #scene_intro .title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
+    #scene_intro .title span {
+      color: #FFF;
+      font-size: 145px;
+      font-weight: 700; }
+
+#scene_1 {
+  position: relative;
+  background-color: #b2c7be;
+  width: 100%; }
+  #scene_1 .clouds_bg {
+    width: 100%;
+    height: auto;
+    margin-top: 650px; }
+  #scene_1 #scene_1_top {
+    position: relative;
+    width: 100%;
+    background-image: url(../../img/01/01/bg.jpg);
+    background-size: cover; }
+    #scene_1 #scene_1_top .content {
+      color: #000;
+      font-size: 1.2em;
+      text-transform: none;
+      font-family: "Crimson Text", serif;
+      padding-top: 250px;
+      margin-left: 3.5%;
+      padding-bottom: 800px;
+      width: 40%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 999999; }
+    #scene_1 #scene_1_top .spacer {
+      height: 2700px;
+      position: relative;
+      display: block;
+      width: 40%; }
+    #scene_1 #scene_1_top .dannybrown {
+      width: 48.25%;
+      height: auto;
+      right: 5%;
+      left: auto; }
+  #scene_1 #scene_1_quote {
+    position: relative;
+    width: 100%;
+    margin-top: -750px; }
+    #scene_1 #scene_1_quote .quotecloud {
+      width: auto;
+      height: 1750px;
+      margin-bottom: -10%; }
+    #scene_1 #scene_1_quote .quote {
+      position: absolute;
+      color: #000;
+      top: 1000px;
+      font-size: 4em;
+      text-align: center;
+      width: 80%;
+      left: 50%;
+      margin-left: -40%;
+      line-height: 1em; }
+  #scene_1 #scene_1_past {
+    position: relative;
+    width: 100%; }
+    #scene_1 #scene_1_past .clouds_top {
+      width: 100%;
+      height: auto;
+      margin-top: -515px; }
+    #scene_1 #scene_1_past .big {
+      font-weight: bold;
+      font-size: 27px !important;
+      font-family: "Crimson Text", serif !important;
+      text-transform: none !important; }
+    #scene_1 #scene_1_past .content {
+      color: #000;
+      font-size: 1.2em;
+      text-transform: none;
+      font-family: "Crimson Text", serif; }
+      #scene_1 #scene_1_past .content.mapbg {
+        margin-top: -15px;
+        background-color: #e5e5e5;
+        background-image: url(../../img/01/02/mapbg_2.jpg);
+        background-position: center top;
+        background-size: auto 100%;
+        padding: 50px 65% 100px 3.5%; }
+      #scene_1 #scene_1_past .content.colorbg {
+        background-color: #dbcabb;
+        padding: 50px 3.5%; }
+        #scene_1 #scene_1_past .content.colorbg p {
+          max-width: 50%; }
+      #scene_1 #scene_1_past .content .quote {
+        float: right;
+        width: 40%;
+        padding: 20px 0 30px 0;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase; }
+        #scene_1 #scene_1_past .content .quote span {
+          display: inline-block;
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 1.9em;
+          font-family: "Oswald", sans-serif;
+          line-height: 1.4em; }
+    #scene_1 #scene_1_past .dannybrown_2 {
+      width: 22%;
+      height: auto; }
+    #scene_1 #scene_1_past .pic1 {
+      width: 16.083333333%;
+      height: auto;
+      left: 74.5833333%; }
+    #scene_1 #scene_1_past .pic2 {
+      width: 27.5%;
+      height: auto;
+      left: 51.916666667%; }
+    #scene_1 #scene_1_past .pic3 {
+      width: 26%;
+      height: auto;
+      left: 73.25%; }
+    #scene_1 #scene_1_past .pic4 {
+      width: 21.416666667%;
+      height: auto;
+      left: 60.25%; }
+    #scene_1 #scene_1_past .pic_bday {
+      background-image: url(../../img/01/02/bday.jpg);
+      background-size: cover;
+      background-position: center top; }
+  #scene_1 #scene_1_car {
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    #scene_1 #scene_1_car .road, #scene_1 #scene_1_car .car, #scene_1 #scene_1_car .bike {
+      display: inline-block;
+      width: 100%;
+      height: auto; }
+    #scene_1 #scene_1_car .quote {
+      position: absolute;
+      color: #FFF;
+      top: 47%;
+      font-size: 4.0em;
+      line-height: 1em;
+      text-align: center;
+      width: 100%; }
+    #scene_1 #scene_1_car .fadetoblack {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      top: 0; }
+
+#scene_2 {
+  position: relative;
+  background-color: #b2c7be;
+  background-image: url(../../img/02/01/cloudbg.jpg);
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  overflow: hidden; }
+  #scene_2 .content {
+    position: relative;
+    color: #000;
+    font-size: 1.2em;
+    text-transform: none;
+    font-family: "Crimson Text", serif;
+    padding: 50px 50% 50px 3.5%; }
+  #scene_2 #scene_2_money {
+    width: 100%;
+    position: relative; }
+    #scene_2 #scene_2_money .dannybrown {
+      width: 47.5%;
+      height: auto;
+      right: 1.5%;
+      left: auto;
+      top: 35px; }
+    #scene_2 #scene_2_money #scene_2_money_content_2 {
+      left: 25%;
+      width: 50%; }
+    #scene_2 #scene_2_money .quotearea {
+      position: relative;
+      background-image: url(../../img/02/01/money_small.png);
+      background-size: cover;
+      background-position: center top;
+      width: 100%; }
+      #scene_2 #scene_2_money .quotearea .quote {
+        position: relative;
+        text-align: center;
+        padding: 300px 0;
+        color: #000;
+        font-size: 2.25em;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        line-height: 1.2em;
+        letter-spacing: -1px; }
+      #scene_2 #scene_2_money .quotearea .money_medium, #scene_2 #scene_2_money .quotearea .money_large {
+        width: 100%;
+        height: auto; }
+  #scene_2 .dannystairs {
+    position: relative;
+    margin: 0 auto;
+    display: block; }
+  #scene_2 #scene_2_drugs {
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    #scene_2 #scene_2_drugs .content {
+      padding: 100px 50% 100px 3.5%; }
+    #scene_2 #scene_2_drugs .loserville, #scene_2 #scene_2_drugs .clouds_top, #scene_2 #scene_2_drugs .clouds_bottom {
+      width: 100%;
+      height: auto; }
+    #scene_2 #scene_2_drugs .clouds_top {
+      position: relative;
+      margin-top: -250px;
+      z-index: 1; }
+    #scene_2 #scene_2_drugs .clouds_bottom {
+      position: relative;
+      margin-top: -150px;
+      z-index: 1; }
+    #scene_2 #scene_2_drugs .dannybrown {
+      width: 26.166666667%;
+      height: auto;
+      left: 60%; }
+
+#scene_3 {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  margin-top: -450px; }
+  #scene_3 #scene_3_jail {
+    position: relative;
+    width: 100%; }
+  #scene_3 .jail_1 {
+    background: url(../../img/03/02/jail_01.jpg);
+    background-size: cover; }
+    #scene_3 .jail_1 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10; }
+  #scene_3 .jail_3 {
+    background: url(../../img/03/02/jail_03.jpg);
+    background-size: cover; }
+  #scene_3 #jailLastMinute {
+    position: absolute;
+    color: #FFF;
+    top: 120px;
+    left: 5%;
+    font-size: 2em;
+    line-height: 1em;
+    text-align: center;
+    opacity: 0; }
+  #scene_3 .jail_4 {
+    background: #fff;
+    width: 100%;
+    height: 100%; }
+    #scene_3 .jail_4 .jail-foreground {
+      z-index: 20;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #scene_3 .jail_4 .dannybrown {
+      width: 16%;
+      height: auto;
+      right: 25%;
+      left: auto;
+      position: absolute;
+      z-index: 10; }
+  #scene_3 .content {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: none;
+    font-family: "Crimson Text", serif;
+    padding: 50px 50% 50px 3.5%; }
+  #scene_3 .jail-marks {
+    display: block;
+    position: absolute;
+    opacity: 0; }
+  #scene_3 .small-mark {
+    width: 100px; }
+  #scene_3 .med-mark {
+    width: 200px; }
+  #scene_3 .large-mark {
+    width: 300px; }
+  #scene_3 #mark_1 {
+    left: 10%;
+    top: 20%; }
+  #scene_3 #mark_2 {
+    left: 21%;
+    top: 43%; }
+  #scene_3 #mark_3 {
+    left: 27%;
+    top: 20%; }
+  #scene_3 #mark_4 {
+    left: 28%;
+    top: 35%; }
+  #scene_3 #mark_5 {
+    left: 36%;
+    top: 23%; }
+  #scene_3 #mark_6 {
+    left: 41%;
+    top: 30%; }
+  #scene_3 #mark_7 {
+    left: 44%;
+    top: 36%; }
+  #scene_3 #mark_8 {
+    left: 54%;
+    top: 63%; }
+  #scene_3 #mark_9 {
+    left: 54%;
+    top: 63%; }
+  #scene_3 #mark_10 {
+    left: 60%;
+    top: 50%; }
+  #scene_3 #mark_11 {
+    left: 70%;
+    top: 38%; }
+  #scene_3 #mark_12 {
+    left: 76%;
+    top: 46%; }
+  #scene_3 #mark_13 {
+    left: 55%;
+    top: -9%; }
+
+#scene_4 {
+  position: relative;
+  width: 100%; }
+  #scene_4 #scene_4_roadtrip {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-image: url(http://covercdn.complex.com.s3.amazonaws.com/legacy-assets/danny_brown/desktop/img/02/01/cloudbg.jpg);
+    background-size: cover;
+    background-position: center top; }
+    #scene_4 #scene_4_roadtrip .road_plax {
+      top: 0;
+      /* left: 0; */
+      position: absolute;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0); }
+    #scene_4 #scene_4_roadtrip #preBusText {
+      color: #000;
+      position: absolute;
+      top: 100px;
+      left: 5%;
+      font-size: 2em;
+      text-align: left;
+      line-height: 1.1em; }
+    #scene_4 #scene_4_roadtrip #postBusText {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      right: 125px;
+      font-size: 2.0em;
+      line-height: 1.1em;
+      text-align: center;
+      opacity: 0; }
+    #scene_4 #scene_4_roadtrip .bus_img {
+      height: 100%; }
+    #scene_4 #scene_4_roadtrip .pullquote {
+      position: absolute;
+      color: #000;
+      top: 35%;
+      font-size: 7.5em;
+      text-align: left;
+      width: 100%;
+      left: 500px;
+      white-space: nowrap;
+      text-align: left; }
+    #scene_4 #scene_4_roadtrip .dannybg {
+      background-image: url(../../img/04/dark.jpg);
+      background-size: cover;
+      background-position: center top;
+      width: 100% !important; }
+      #scene_4 #scene_4_roadtrip .dannybg .content {
+        width: 45%;
+        position: relative;
+        color: #fff;
+        font-size: 1.2em;
+        text-transform: none;
+        font-family: "Crimson Text", serif;
+        padding: 50px 50% 50px 3.5%;
+        text-shadow: 1px 0px 5px #000; }
+      #scene_4 #scene_4_roadtrip .dannybg .quote {
+        position: absolute;
+        opacity: 0;
+        width: 80%;
+        text-align: center;
+        text-transform: none;
+        text-transform: uppercase;
+        top: 64%;
+        font-size: 36px;
+        line-height: 1.4em;
+        margin-left: -40%;
+        left: 50%;
+        font-family: "Oswald", sans-serif; }
+    #scene_4 #scene_4_roadtrip .dannybrown {
+      width: 35%;
+      height: auto;
+      right: 10%;
+      left: auto; }
+
+#scene_04_internal {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%; }
+  #scene_04_internal .content {
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: none;
+    font-family: "Crimson Text", serif;
+    margin-left: 3.5%;
+    width: 25%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 50; }
+  #scene_04_internal .bg {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: white url(../../img/04/internal.jpg) no-repeat;
+    background-size: cover; }
+  #scene_04_internal .bg_xray {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    background: white url(../../img/04/internal_xray.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.75s;
+    -webkit-transition: opacity 0.75s; }
+  #scene_04_internal .pill {
+    background: url(../../img/04/pill.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0%;
+    z-index: 30;
+    left: .2%;
+    width: 100%;
+    height: 100%;
+    opacity: 0; }
+
+#scene_05 {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  background-color: #a4cdd1; }
+  #scene_05 .inner_copy {
+    top: 500px;
+    position: absolute;
+    width: 30%;
+    left: 50px;
+    z-index: 100; }
+  #scene_05 p {
+    position: relative;
+    color: #000;
+    font-size: 1.2em;
+    text-transform: none;
+    font-family: "Crimson Text", serif; }
+  #scene_05 img {
+    display: block; }
+  #scene_05 .topcloud {
+    position: absolute;
+    /* top: -700px; */
+    top: 0;
+    z-index: 40; }
+  #scene_05 .cloudbg {
+        /*
+        background: white url(../../img/02/01/cloudbg.jpg) no-repeat;
+        background-size: cover;
+
+        width: 100%;
+        height: 2700px;
+        */
+    position: relative; }
+  #scene_05 .dannybrown_scene5 {
+    position: absolute;
+    top: 0;
+    width: 21%;
+    left: 60%;
+    z-index: 20; }
+  #scene_05 .scene5_cover {
+    background: #fff; }
+  #scene_05 .scene5_cover img {
+    margin: 0 auto;
+    display: block; }
+  #scene_05 .dannybg_braids {
+    position: relative; }
+
+/*
+ * 
+ * Scene Pre Concert
+ * 
+ */
+#scene_preConcert {
+  width: 100%;
+  background: url(../../img/05/portrait.jpg) no-repeat;
+  display: block;
+  position: relative;
+  background-size: cover; }
+  #scene_preConcert .content {
+    width: 100%;
+    max-width: 1600px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto; }
+    #scene_preConcert .content .inner {
+      width: 35%;
+      float: right;
+      margin-right: 70px;
+      font-size: 1.2em;
+      color: #000;
+      margin-top: 100px; }
+
+#fadeBlack {
+  background: black url(../../img/06/blackfade.png) center center;
+  width: 100%; }
+
+#buildingRepeat {
+  margin-top: -200px;
+  padding-top: 400px;
+  width: 100%;
+  overflow: hidden;
+  background: url(../../img/06/repeat_window.png) repeat-y right center; }
+
+#buildingRepeat #buildingText {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+#buildingRepeat #buildingText .inner {
+  float: left;
+  width: 50%;
+  margin-left: 30px; }
+
+#scene_building {
+  position: relative; }
+
+.buildingBottom {
+  width: 100%; }
+
+#scene_last {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  width: 100%; }
+
+#blackBlackground {
+  background-color: #000;
+  width: 100%;
+  min-height: 100%; }
+
+#blackBlackground img {
+  display: none;
+  width: 100%;
+  height: auto; }
+
+/*
+ * 
+ * Concert Scene
+ * 
+ */
+#scene_concert {
+  position: relative;
+  width: 100%; }
+
+.concertbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  width: 100%; }
+
+#concertbg1 {
+  background: url(../../img/05/thats-all-folks-1.png) no-repeat center center;
+  background-size: auto 100%; }
+
+#concertbg2 {
+  background: url(../../img/05/thats-all-folks-2.png) no-repeat center center;
+  background-size: auto 100%; }
+
+#concertbg3 {
+  background: url(../../img/05/thats-all-folks-3.png) no-repeat center center;
+  background-size: auto 100%; }
+
+#concertbg4 {
+  background: url(../../img/05/thats-all-folks-4.png) no-repeat center center;
+  background-size: auto 100%; }
+
+#concert_danny {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-size: auto 100%;
+  background: black url(../../img/05/concert.jpg) no-repeat center center; }
+
+#concert_hands {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../img/05/hands.png) no-repeat center bottom;
+  margin-top: 400px;
+  width: 100%; }
+
+/*
+ *
+ * Post Concert Scene 
+ * 
+ */
+#scene_blackFill {
+  background: #000;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative; }
+  #scene_blackFill h3 {
+    color: #FFF;
+    position: absolute;
+    top: 40%;
+    font-size: 36px;
+    text-align: center;
+    width: 50%;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    left: 50%;
+    margin-left: -25%; }
+
+/*
+ *
+ * Building Scene 
+ * 
+ */
+#scene_building {
+  background: #567D81;
+  position: relative;
+  overflow: hidden; }
+
+#scene_building p {
+  font-size: 1.2em;
+  text-transform: none;
+  font-family: "Crimson Text", serif; }
+
+#scene_3 {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -450px; }
+
+#buildingDanny {
+  width: 465px;
+  left: inherit !important;
+  right: 100px;
+  z-index: 999; }
+
+#buildingD1 {
+  background: url(../../img/06/danny_1.png) no-repeat;
+  width: 465px;
+  height: 269px;
+  position: absolute;
+  top: 0;
+  display: none; }
+
+#buildingD2 {
+  background: url(../../img/06/danny_2.png) no-repeat;
+  width: 384px;
+  height: 510px;
+  display: none;
+  position: absolute;
+  top: 0; }
+
+#buildingD3 {
+  background: url(../../img/06/danny_3.png) no-repeat;
+  width: 332px;
+  height: 449px;
+  display: none;
+  position: absolute;
+  top: 0; }
+
+#fadeBlack {
+  background: url(../../img/06/blackfade.png) center center;
+  width: 100%;
+  height: 779px;
+  background-size: 100% 779px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#buildingWrap {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 1022px; }
+  #buildingWrap #buildingSkyline {
+    margin-right: 200px;
+    width: 1507px;
+    height: 1022px;
+    background: url(../../img/06/skyline.png) no-repeat right bottom;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  #buildingWrap #buildingBottom {
+    width: 100%;
+    height: 1022px;
+    background: url(../../img/06/building.png) no-repeat right center;
+    position: absolute;
+    right: 0; }
+  #buildingWrap #buildingBottomRepeat {
+    width: 100%;
+    height: 1022px;
+    background: url(../../img/06/gradient.png) repeat-x center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+#buildingRepeat #buildingText {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#buildingRepeat #buildingText .inner {
+  float: left;
+  width: 42%;
+  margin-left: 30px;
+  margin-top: 33%; }
+
+/*
+ *
+ * Eyes Scene 
+ * 
+ */
+#scene_last {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  width: 100%; }
+
+#blackBlackground {
+  background-color: #000;
+  width: 100%;
+  min-height: 100%; }
+
+#blackBlackground video {
+  display: none;
+  width: 100%;
+  height: auto; }
+
+@media screen and (max-height: 750px) {
+  body {
+    font-size: 85%; } }
+/**
+ * Complex Cover Story Navbar
+ * --------------------------
+ * 
+ * @author eduardo.guanilo@complex.com
+ */
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10000;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  height: 55px;
+  transition: opacity .03s ease-in-out;
+  -moz-transition: opacity .03s ease-in-out;
+  -webkit-transition: opacity .03s ease-in-out; }
+  header .main-container {
+    display: none;
+    padding-bottom: 11px;
+    height: 55px;
+    background-color: black;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -webkit-transition: opacity 2s ease-in; }
+    header .main-container.dimmed {
+      opacity: 0.08;
+      filter: alpha(opacity=8);
+      transition: opacity .25s ease-out;
+      -moz-transition: opacity .25s ease-out;
+      -webkit-transition: opacity .25s ease-out; }
+    header .main-container:hover {
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out; }
+    header .main-container .inner-header {
+      border-bottom: 1px solid gray;
+      position: relative;
+      margin: 0 auto;
+      padding-left: 100px;
+      padding-right: 100px; }
+  header .mobile-container {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    background-color: black;
+    padding-bottom: 11px; }
+    header .mobile-container a {
+      padding-left: 20px;
+      padding-right: 20px; }
+    header .mobile-container .inner-mobile {
+      border-bottom: 1px solid gray; }
+    header .mobile-container .share-mobile {
+      display: none; }
+      header .mobile-container .share-mobile li {
+        border-left: none;
+        width: 25%;
+        text-align: center; }
+  header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    outline: 0; }
+  header ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+    height: 55px; }
+    header ul li {
+      position: relative;
+      list-style: none;
+      float: left;
+      height: 55px;
+      line-height: 55px;
+      border-left: 1px solid gray;
+      cursor: pointer; }
+      header ul li a {
+        padding-left: 25px;
+        padding-right: 25px; }
+      header ul li.nav-up:hover {
+        background-color: gray; }
+      header ul li.nav-right {
+        float: right !important; }
+        header ul li.nav-right:hover {
+          background-color: gray; }
+      header ul li.first-btn {
+        border-left: none;
+        width: 30%; }
+      header ul li.last-btn {
+        border-right: 1px solid gray; }
+      header ul li.last-mob {
+        border-right: none; }
+
+@media screen and (min-width: 925px) {
+  header .main-container {
+    display: block; } }
+@media screen and (min-width: 925px) {
+  header .mobile-container {
+    display: none; } }
+.nav-text:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid white; }
+
+.nav-icon {
+  padding: 0 0 5px 20px; }
+
+.back {
+  background: url("../../img/misc/cs_nav_sprite.png") no-repeat;
+  background-position: 0px 3px;
+  margin-right: 0px; }
+
+.up {
+  background: url("../../img/misc/cs_nav_sprite.png") no-repeat;
+  background-position: -15px 5px; }
+
+.comment {
+  background: url("../../img/misc/cs_nav_sprite.png") no-repeat;
+  background-position: -40px 0px; }
+
+.twitter {
+  background: url("../../img/misc/cs_nav_sprite.png") no-repeat;
+  background-position: -80px 0px; }
+
+.fb {
+  background: url("../../img/misc/cs_nav_sprite.png") no-repeat;
+  background-position: -117px 0px; }
+
+.gplus {
+  background: url("../../img/misc/cs_nav_sprite.png") no-repeat;
+  background-position: -40px -20px; }
+
+.book {
+  background: url("../../img/misc/cs_nav_sprite.png") no-repeat;
+  background-position: 0px -20px; }
+
+.share {
+  background: url("../../img/misc/cs_nav_sprite.png") no-repeat;
+  background-position: -82px -20px; }
+
+/*
+ * 
+ * PreLoader
+ * 
+ */
+#preloadOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: #232323;
+  position: fixed;
+  z-index: 666999;
+  top: 0;
+  left: 0; }
+  #preloadOverlay .preload-content {
+    margin: 175px auto 0;
+    width: 491px; }
+    #preloadOverlay .preload-content .preload-complex-logo {
+      background-image: url(../../img/misc/complex-logo-fillup.png);
+      background-position: 0px -5px;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 102px; }
+    #preloadOverlay .preload-content .preload-text {
+      text-align: center;
+      font-size: 1.3em;
+      margin-top: 100px;
+      color: #7E7E7E; }
+      #preloadOverlay .preload-content .preload-text .procentage-load {
+        color: #FFF; }
+
+/*
+ * 
+ * Resizing
+ * 
+ */
+#resizingContent {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  #resizingContent #resizeOverloay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: .95; }
+  #resizingContent h2 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    font-size: 5.0em;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    text-transform: uppercase;
+    margin: 0; }
